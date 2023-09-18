@@ -10,20 +10,6 @@ import requests
 import time
 import pandas as pd
 
-
-# In[4]:
-
-
-link = 'https://fundamentus.com.br/resultado.php'
-url = requests.get(link)
-
-# confirma se houve conexão com o site em questão
-if url.status_code == 200:
-    print('Conexão realizada com sucesso!')
-else:
-    print("Conexão não realizada com sucesso!")
-
-
 # In[12]:
 
 
@@ -47,14 +33,6 @@ table = navegador.find_element(By.ID,
 
 print(table)
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
